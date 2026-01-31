@@ -1,22 +1,37 @@
 /* General Styling */
 body {
-
-font-family: Arial, sans-serif; 
-background-color: #f4f4f4;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1f2933, #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
 }
+
 /* Profile Card */
 .profile-card {
-background: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); text-align: center;
-width: px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 16px;
+  width: 320px;
+
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover effect */
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
 -profile-img {
 width: 100px;
 height: 100px;
@@ -25,11 +40,15 @@ border: 3px solid #007bff;
 margin-bottom: 10px;
 }
 
+h1{
+    margin: 10px 0; color:rgb(0, 0, 0);
+}
+
 h2 {
 margin: 10px 0; color: #333;
 }
 P{
-color: #777;
+color: #000000;
 margin: 5px 0;
 }
 /* Social Icons */ .social-icons {
@@ -47,7 +66,7 @@ transition: transform 0.3s;
 
 /* Button Styling */ .btn {
 
-display: inline-block; margin-top: 15px; padding: 10px 15px; background-color: #007bff; color: white;
+display: inline-block; margin-top: 15px; padding: 10px 15px; background-color: #007bff; color: rgb(255, 255, 255);
 text-decoration: none; border-radius: 5px;
 }
 .btn:hover {
@@ -56,18 +75,22 @@ background-color: #0056b3;
 }
 /* About Page Styling */
 .about-container {
-background: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-text-align: center;
-width: 400px;
-}
-.about-container h1 {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 18px;
+  width: 420px;
 
-color: #333;
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.about-container p {
-color: #555;
-text-align: justify;
+
+/* Hover effect */
+.about-container:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 20px 45px rgba(0, 0, 0, 0.25);
 }
